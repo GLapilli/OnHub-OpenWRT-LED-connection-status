@@ -2,7 +2,7 @@
 Simple script that uses status LED on Onhub router (tested on TP-Link) running OpenWRT to display connection status, since that's a feature that isn't included in the [OpenWRT release for Onhub](https://openwrt.org/inbox/toh/google/onhub_tp-link_tgr1900). 
 The script pings 8.8.8.8 once every three seconds to check wether there's internet connection or not. If there is connection, it shows a static light blue ring. When connection is lost, shows a red ring. Colors can be edited in the script.
 
-## Steps to make it work:
+## Installation:
 
 1. Download file `Internet_check.sh` somewhere to your computer
 2. Copy it to your Onhub router to `/etc/Internet_check.sh` (if you don't know how to do it, read below) 
@@ -16,7 +16,7 @@ chmod 755 /etc/Internet_check
 ```
 5. Reboot and enjoy!
 
-## Backup script along with your Openwrt configuration
+## Script backup
 If you would like this script to be a part of your Onhub OpenWRT backup configuration files, all you need to do is edit `/etc/sysupgrade.conf` and add the line `/etc/Internet_check.sh`. Now when you backup your configuration, the script will be part of the backup package.
 
 ## Copying file from Linux
