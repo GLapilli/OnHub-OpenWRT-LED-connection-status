@@ -1,6 +1,6 @@
 # OnHub-OpenWRT-LED-connection-status
 Simple script that uses status LED on Onhub router (tested on TP-Link) running OpenWRT to display connection status, since that's a feature that isn't included in the [OpenWRT release for Onhub](https://openwrt.org/inbox/toh/google/onhub_tp-link_tgr1900). 
-The script pings 8.8.8.8 once every three seconds to check wether there's internet connection or not. If there is connection, it shows a static light blue ring. When connection is lost, shows a red ring. Colors can be edited in the script.
+The script pings 8.8.8.8 three times and waits five seconds to check wether there's internet connection or not. If there is connection, it shows a static light blue ring. When connection is lost, shows a red ring. Colors can be edited in the script.
 
 ## Installation:
 

@@ -29,8 +29,8 @@ flag="start"
 while :
 do
 
-#pings 8.8.8.8 only once, with a 3 second timeout.
-ping -c1 -q -W3 8.8.8.8 
+#pings 8.8.8.8 three times, with a 5 second timeout.
+ping -c3 -q -W5 8.8.8.8 
 status=$?;
 case $status in
     0)
@@ -95,5 +95,5 @@ else
 	/bin/echo "255" > /sys/class/leds/red:status-5/brightness
 	fi
 fi
-sleep 3
+sleep 5
 done
